@@ -1,3 +1,5 @@
+#Código en python para visualizar la propagación de un a enfermedad 
+#Se tienen los estados S,I, se agregó el estado vacío como en incendios forestales
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import animation
