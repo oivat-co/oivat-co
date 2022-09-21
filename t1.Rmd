@@ -1,0 +1,69 @@
+---
+title: "Tarea 1"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, include=FALSE}
+setwd("/media/oivat/acambaro/oivat/R")
+library(dplyr)
+iris
+```
+## Medidas de Tendencia central
+Media
+```{r,echo=FALSE}
+iris %>% summarise_if(is.numeric, mean)
+```
+Mediana
+```{r,echo=FALSE}
+iris %>% summarise_if(is.numeric, median)
+```
+Cuartiles de sépalo (Largo y ancho)
+```{r,echo=FALSE}
+
+summary(iris$Sepal.Length)
+summary(iris$Sepal.Width)
+```
+Cuartiles de pétalo (Largo y ancho)
+```{r,echo=FALSE}
+summary(iris$Petal.Length)
+summary(iris$Petal.Width)
+```
+Rango intercuartil Sépalos (Largo y ancho)
+```{r,echo=FALSE}
+IQR(iris$Sepal.Length)
+IQR(iris$Sepal.Width)
+```
+Rango intercuartil Pétalos (Largo y ancho)
+```{r,echo=FALSE}
+IQR(iris$Petal.Length)
+IQR(iris$Petal.Width)
+```
+Varianza de largo y ancho de sépalos y pétalos
+```{r,echo=FALSE} 
+iris %>% summarise_if(is.numeric, var)
+```
+DS de largo y ancho de sépalos y pétalos
+```{r,echo=FALSE}
+iris %>% summarise_if(is.numeric, sd)
+```
+
+## Gráficas
+Sépalos
+```{r echo=FALSE}
+par(mfrow=c(1,2))
+boxplot(iris$Sepal.Length, main="Boxplot de longitud")
+boxplot(iris$Sepal.Width, main="Boxplot de medida de ancho")
+```
+Pétalos
+```{r echo=FALSE}
+par(mfrow=c(1,2))
+boxplot(iris$Petal.Length, main="Boxplot de longitud")
+boxplot(iris$Petal.Width,main="Boxplot de medida de ancho")
+
+```
+
