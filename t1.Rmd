@@ -54,13 +54,13 @@ iris %>% summarise_if(is.numeric, sd)
 
 ## Gráficas
 Sépalos
-```{r echo=FALSE}
+```{r echo=TRUE}
 par(mfrow=c(1,2))
 boxplot(iris$Sepal.Length, main="Boxplot de longitud")
 boxplot(iris$Sepal.Width, main="Boxplot de medida de ancho")
 ```
 Pétalos
-```{r echo=FALSE}
+```{r echo=TRUE}
 par(mfrow=c(1,2))
 boxplot(iris$Petal.Length, main="Boxplot de longitud")
 boxplot(iris$Petal.Width,main="Boxplot de medida de ancho")
