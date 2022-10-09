@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @oivatcorp
 - 👀 I’m interested in Python, C++, also in Mathematical Modelling.
-- 🌱 I’m currently learning Python.
-- 💞️ I’m looking to collaborate on projects that involve Financial or Biological Systems
-- 📫 How to reach me here and on twitter @octaviedro
+- 🌱 I’m currently learning Python and R.
+- 💞️ I’m looking to collaborate on projects that involve Complexity. 
+- 📫 oivatcorp
 
 <!---
 oivatcorp/oivatcorp is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
